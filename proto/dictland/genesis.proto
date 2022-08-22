@@ -1,0 +1,14 @@
+syntax = "proto3";
+package dictland.dictland;
+
+import "gogoproto/gogo.proto";
+import "dictland/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "dictland/x/dictland/types";
+
+// GenesisState defines the dictland module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

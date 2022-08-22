@@ -1,0 +1,12 @@
+syntax = "proto3";
+package dictland.dictland;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "dictland/x/dictland/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
